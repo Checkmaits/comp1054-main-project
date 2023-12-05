@@ -2,10 +2,9 @@
   "name": "main-project",
   "version": "1.0.0",
   "description": "Main project for COMP-1054 (Interface Design)",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "build": "node app.js",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Brock Mowry",
