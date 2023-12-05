@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Include these tags in production -->
+    <!-- <meta
+      name="description"
+      content="Explore the cosmos with spacetours.io, your premier space exploration company. Discover unique celestial experiences and book your journey today."
+    />
+    <meta
+      name="keywords"
+      content="space tourism, cosmic adventures, interstellar travel, celestial tours, spacetours.io"
+    />
+    <meta name="author" content="spacetours.io" />
+    <meta name="robots" content="index, follow" /> -->
+
+    <!-- Split up the styling for organization -->
+    <!-- I asked ChatGPT, he said it was okay to do this :) -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/mobile-nav.css" />
+
+    <title>spacetours.io | Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__top">
+          <div class="logo">
+            <img
+              src="/images/spaceship-icon.svg"
+              alt="spacetours.io logo"
+              style="height: 50px"
+            />
+            <span>spacetours.io</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link active">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/about" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/packages" class="header__nav-link">Packages</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/contact" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__nav-hamburger">
+            <img src="/images/hamburger.svg" alt="hamburger menu" />
+          </div>
+        </div>
+        <div class="header__body">
+          <h1 class="text-white">Experience</h1>
+          <h1 class="big-blue">Space</h1>
+        </div>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="/" class="mobile-nav__link">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/about" class="mobile-nav__link">About</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/packages" class="mobile-nav__link">Packages</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/contact" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main__content">
+        <div class="text-center">
+          <h2>Why spacetours.io?</h2>
+          <p>What makes us better?</p>
+        </div>
+
+        <div class="main__card-container">
+          <div class="main__card">
+            <img
+              src="/images/space-hotel.jpeg"
+              alt="personal quarters"
+              class="main__card-img"
+            />
+            <div class="main__card-content">
+              <h3 class="main__card-title">Quarters</h3>
+              <p class="main__card-details">
+                Meticulously designed for your well-being while you travel with us, these
+                spaces offer a serene sanctuary amid the stars. Each unit has a private
+                bathroom, a personal entertainment system, and windows to glance out into
+                the vast, beautiful cosmos.
+              </p>
+            </div>
+          </div>
+          <div class="main__card">
+            <div class="main__card-content">
+              <h3 class="main__card-title">Ship Tours</h3>
+              <p class="main__card-details">
+                Learn a little more about the ship with our guided tours. Our expert tour
+                guides take you on a detailed tour around the ship where you'll learn
+                everything there is to know about the cockpit, engine room and much more!
+              </p>
+            </div>
+            <img
+              src="/images/spaceship-cockpit.jpeg"
+              alt="cockpit"
+              class="main__card-img"
+            />
+          </div>
+          <div class="main__card">
+            <img
+              src="/images/spaceship-dining_hall.jpeg"
+              alt="dining hall"
+              class="main__card-img"
+            />
+            <div class="main__card-content">
+              <h3 class="main__card-title">Dining Hall</h3>
+              <p class="main__card-details">
+                Dine in style with our 5-star chefs. Our chefs are trained in the art of
+                many different cuisines, so whether you're looking for a burger or a spicy
+                Indian dish, you'll find it at spacetours.io.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__cta">
+          <div class="text-center">
+            <h3>Ready to book?</h3>
+            <p>Book your trip today and experience the cosmos like never before.</p>
+          </div>
+          <p class="text-center">
+            <a href="/packages" class="btn btn__white">Book Now</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="logo">
+              <img
+                src="/images/spaceship-icon.svg"
+                alt="spacetours.io logo"
+                style="height: 50px"
+              />
+              <span>spacetours.io</span>
+            </div>
+
+            <p class="text-white">
+              Space Tours Ltd. <br />
+              529 Nickel Rd <br />
+              Los Angeles, CA 90017
+            </p>
+          </div>
+
+          <div class="footer__col text-center">
+            <h4 class="text-white">Company</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Legal</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Testimonials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col text-end">
+            <h4 class="text-white">Socials</h4>
+            <div class="footer__social-links">
+              <img
+                src="/images/facebook-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/instagram-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/twitter-x-logo.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p class="text-white text-center">&copy; spacetours.io, 2160 A.D.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".header__nav-hamburger");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

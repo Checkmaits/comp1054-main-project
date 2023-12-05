@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/mobile-nav.css" />
+
+    <title>spacetours.io | Contact</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__top">
+          <div class="logo">
+            <img
+              src="/images/spaceship-icon.svg"
+              alt="spacetours.io logo"
+              style="height: 50px"
+            />
+            <span>spacetours.io</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/about" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/packages" class="header__nav-link">Packages</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/contact" class="header__nav-link active">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__nav-hamburger">
+            <img src="/images/hamburger.svg" alt="hamburger menu" />
+          </div>
+        </div>
+        <div class="header__body">
+          <h1 class="big-white">Contact</h1>
+        </div>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="/" class="mobile-nav__link">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/about" class="mobile-nav__link">About</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/packages" class="mobile-nav__link">Packages</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="/contact" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Bootstrap for the form. -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+      />
+
+      <div class="main__content">
+        <div class="text-center">
+          <h2>Contact</h2>
+          <p>Have a message for us? Please use the form below.</p>
+        </div>
+
+        <div class="form__wrapper d-flex justify-content-center align-items-center">
+          <form class="contact__form">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="col">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn__primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="logo">
+              <img
+                src="/images/spaceship-icon.svg"
+                alt="spacetours.io logo"
+                style="height: 50px"
+              />
+              <span>spacetours.io</span>
+            </div>
+
+            <p class="text-white">
+              Space Tours Ltd. <br />
+              529 Nickel Rd <br />
+              Los Angeles, CA 90017
+            </p>
+          </div>
+
+          <div class="footer__col text-center">
+            <h4 class="text-white">Company</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Legal</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Testimonials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col text-end">
+            <h4 class="text-white">Socials</h4>
+            <div class="footer__social-links">
+              <img
+                src="/images/facebook-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/instagram-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/twitter-x-logo.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p class="text-white text-center">&copy; spacetours.io, 2160 A.D.</p>
+      </div>
+    </footer>
+
+    <script>
+      const submit = (e) => {
+        e.preventDefault();
+      };
+    </script>
+
+    <script>
+      const hamburger = document.querySelector(".header__nav-hamburger");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

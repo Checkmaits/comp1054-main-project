@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/mobile-nav.css" />
+
+    <title>spacetours.io | About</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__top">
+          <div class="logo">
+            <img
+              src="/images/spaceship-icon.svg"
+              alt="spacetours.io logo"
+              style="height: 50px"
+            />
+            <span>spacetours.io</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/about" class="header__nav-link active">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/packages" class="header__nav-link">Packages</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/contact" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__nav-hamburger">
+            <img src="/images/hamburger.svg" alt="hamburger menu" />
+          </div>
+        </div>
+        <div class="header__body">
+          <h1 class="big-white">About</h1>
+        </div>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="/" class="mobile-nav__link">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="/about" class="mobile-nav__link">About</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="/packages" class="mobile-nav__link">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="/contact" class="mobile-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main__content">
+        <div class="text-center mb-20">
+          <h2>About Us</h2>
+          <p>Where did it all start?</p>
+        </div>
+
+        <div class="about__row">
+          <div class="about__col">
+            <img
+              src="/images/ass-dumb-headshot.jpeg"
+              alt="ass dumb headshot"
+              class="about__img"
+            />
+          </div>
+          <div class="about__col col-2">
+            <h3>Our Founder</h3>
+            <p>
+              Meet the visionary force behind our spacefaring dreams, Ass Dumb. As the
+              founder of our cutting-edge space tours company, Ass' passion for
+              exploration knows no bounds. With a background in astrophysics and a heart
+              fueled by the desire to make space accessible to all, he embarked on a
+              mission to redefine the future of interstellar travel. Ass' unwavering
+              commitment to innovation and a keen eye for merging technology with
+              wanderlust has propelled our company to new celestial heights.
+            </p>
+          </div>
+        </div>
+
+        <div class="about__row">
+          <div class="about__col">
+            <img
+              src="/images/nuclear-reactor.jpeg"
+              alt="ass dumb headshot"
+              class="about__img"
+            />
+          </div>
+          <div class="about__col col-2">
+            <h3>Nuclear Fusion</h3>
+            <p>
+              After the discovery of clean nuclear fusion as a source of energy, our
+              trajectory into the cosmos was forever altered. The once elusive dream of
+              sustainable and efficient space exploration became a tangible reality. With
+              the harnessing of fusion energy, our spacecraft now embark on interstellar
+              voyages with an unprecedented harmony of power and environmental
+              consciousness. This breakthrough has not only revolutionized our propulsion
+              systems but has ignited a new era of exploration where the infinite
+              possibilities of the universe are within our grasp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__content">
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="logo">
+              <img
+                src="/images/spaceship-icon.svg"
+                alt="spacetours.io logo"
+                style="height: 50px"
+              />
+              <span>spacetours.io</span>
+            </div>
+
+            <p class="text-white">
+              Space Tours Ltd. <br />
+              529 Nickel Rd <br />
+              Los Angeles, CA 90017
+            </p>
+          </div>
+
+          <div class="footer__col text-center">
+            <h4 class="text-white">Company</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Legal</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Testimonials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col text-end">
+            <h4 class="text-white">Socials</h4>
+            <div class="footer__social-links">
+              <img
+                src="/images/facebook-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/instagram-icon.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+              <img
+                src="/images/twitter-x-logo.svg"
+                alt="facebook"
+                class="footer__social-link"
+              />
+            </div>
+          </div>
+        </div>
+
+        <p class="text-white text-center">&copy; spacetours.io, 2160 A.D.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".header__nav-hamburger");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
