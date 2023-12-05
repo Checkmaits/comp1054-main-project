@@ -4,6 +4,7 @@
   "description": "Main project for COMP-1054 (Interface Design)",
   "main": "app.js",
   "scripts": {
+    "build": "node app.js",
     "start": "node app.js"
   },
   "keywords": [],
