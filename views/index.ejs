@@ -3,27 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Include these tags in production -->
-    <!-- <meta
-      name="description"
-      content="Explore the cosmos with spacetours.io, your premier space exploration company. Discover unique celestial experiences and book your journey today."
-    />
-    <meta
-      name="keywords"
-      content="space tourism, cosmic adventures, interstellar travel, celestial tours, spacetours.io"
-    />
-    <meta name="author" content="spacetours.io" />
-    <meta name="robots" content="index, follow" /> -->
-
-    <!-- Split up the styling for organization -->
-    <!-- I asked ChatGPT, he said it was okay to do this :) -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/mobile-nav.css" />
-
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>spacetours.io | Home</title>
   </head>
   <body>
@@ -87,67 +67,80 @@
           <p>What makes us better?</p>
         </div>
 
-        <div class="main__card-container">
-          <div class="main__card">
-            <img
-              src="/images/space-hotel.jpeg"
-              alt="personal quarters"
-              class="main__card-img"
-            />
-            <div class="main__card-content">
-              <h3 class="main__card-title">Quarters</h3>
-              <p class="main__card-details">
-                Meticulously designed for your well-being while you travel with us, these
-                spaces offer a serene sanctuary amid the stars. Each unit has a private
-                bathroom, a personal entertainment system, and windows to glance out into
-                the vast, beautiful cosmos.
-              </p>
-            </div>
+        <section class="main__section">
+          <div class="main__card-container">
+            <article>
+              <div class="main__card">
+                <img
+                  src="/images/space-hotel.jpeg"
+                  alt="personal quarters"
+                  class="main__card-img"
+                />
+                <div class="main__card-content">
+                  <h3 class="main__card-title">Quarters</h3>
+                  <p class="main__card-details">
+                    Meticulously designed for your well-being while you travel with us,
+                    these spaces offer a serene sanctuary amid the stars. Each unit has a
+                    private bathroom, a personal entertainment system, and windows to
+                    glance out into the vast, beautiful cosmos.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="main__card">
+                <div class="main__card-content">
+                  <h3 class="main__card-title">Ship Tours</h3>
+                  <p class="main__card-details">
+                    Learn a little more about the ship with our guided tours. Our expert
+                    tour guides take you on a detailed tour around the ship where you'll
+                    learn everything there is to know about the cockpit, engine room and
+                    much more!
+                  </p>
+                </div>
+                <img
+                  src="/images/spaceship-cockpit.jpeg"
+                  alt="cockpit"
+                  class="main__card-img"
+                />
+              </div>
+            </article>
+            <article>
+              <div class="main__card">
+                <img
+                  src="/images/spaceship-dining_hall.jpeg"
+                  alt="dining hall"
+                  class="main__card-img"
+                />
+                <div class="main__card-content">
+                  <h3 class="main__card-title">Dining Hall</h3>
+                  <p class="main__card-details">
+                    Dine in style with our 5-star chefs. Our chefs are trained in the art
+                    of many different cuisines, so whether you're looking for a burger or
+                    a spicy Indian dish, you'll find it at spacetours.io.
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
-          <div class="main__card">
-            <div class="main__card-content">
-              <h3 class="main__card-title">Ship Tours</h3>
-              <p class="main__card-details">
-                Learn a little more about the ship with our guided tours. Our expert tour
-                guides take you on a detailed tour around the ship where you'll learn
-                everything there is to know about the cockpit, engine room and much more!
-              </p>
-            </div>
-            <img
-              src="/images/spaceship-cockpit.jpeg"
-              alt="cockpit"
-              class="main__card-img"
-            />
-          </div>
-          <div class="main__card">
-            <img
-              src="/images/spaceship-dining_hall.jpeg"
-              alt="dining hall"
-              class="main__card-img"
-            />
-            <div class="main__card-content">
-              <h3 class="main__card-title">Dining Hall</h3>
-              <p class="main__card-details">
-                Dine in style with our 5-star chefs. Our chefs are trained in the art of
-                many different cuisines, so whether you're looking for a burger or a spicy
-                Indian dish, you'll find it at spacetours.io.
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="main__cta">
-          <div class="text-center">
-            <h3>Ready to book?</h3>
-            <p>Book your trip today and experience the cosmos like never before.</p>
-          </div>
-          <p class="text-center">
-            <a href="/packages" class="btn btn__white">Book Now</a>
-          </p>
-        </div>
+        <section class="booking__section">
+          <article class="booking__article">
+            <div class="main__cta">
+              <div class="text-center">
+                <h3>Ready to book?</h3>
+                <p>Book your trip today and experience the cosmos like never before.</p>
+              </div>
+              <p class="text-center">
+                <a href="/packages" class="btn btn__white">Book Now</a>
+              </p>
+            </div>
+          </article>
+        </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__content">
         <div class="footer__row">
           <div class="footer__col">

@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/mobile-nav.css" />
-
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>spacetours.io | <%= package.name %></title>
   </head>
   <body>
@@ -66,36 +61,40 @@
     </header>
     <main>
       <div class="main__content">
-        <div class="package-view__row">
-          <div class="package-view__col">
-            <img
-              src="/images/<%= package.image %>"
-              alt="package-image"
-              class="package-view__img"
-            />
-          </div>
-          <div class="package-view__col">
-            <div class="package-view__header">
-              <h2><%= package.name %></h2>
-              <p><%= package.description %></p>
-            </div>
-            <ul class="package-view__features">
-              <% package.features.forEach(feature => { %>
-              <li><%= feature %></li>
-              <% }) %>
-            </ul>
-            <div class="package-view__footer">
-              <div>
-                <p>Price: $<%= package.price %></p>
-                <p>Length: <%= package.length %> days</p>
+        <section class="package">
+          <article class="package__article">
+            <div class="package-view__row">
+              <div class="package-view__col">
+                <img
+                  src="/images/<%= package.image %>"
+                  alt="package-image"
+                  class="package-view__img"
+                />
               </div>
-              <a href="#" class="btn btn__primary">Book Now</a>
+              <div class="package-view__col">
+                <div class="package-view__header">
+                  <h2><%= package.name %></h2>
+                  <p><%= package.description %></p>
+                </div>
+                <ul class="package-view__features">
+                  <% package.features.forEach(feature => { %>
+                  <li><%= feature %></li>
+                  <% }) %>
+                </ul>
+                <div class="package-view__footer">
+                  <div>
+                    <p>Price: $<%= package.price %></p>
+                    <p>Length: <%= package.length %> days</p>
+                  </div>
+                  <a href="#" class="btn btn__primary">Book Now</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__content">
         <div class="footer__row">
           <div class="footer__col">

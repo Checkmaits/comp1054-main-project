@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --bg-black: #000000;
+  --fg-white: #fefefe;
+  --pr-blue: #355a77;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+.h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h2,
+.h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h3,
+.h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5,
+.h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6,
+.h6 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-white {
+  color: var(--fg-white);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-family: "Bebas Neue", cursive;
+  color: var(--fg-white);
+  font-size: 1.85rem;
+}
+
+.big-blue {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8rem !important;
+  color: var(--pr-blue);
+  margin-top: -25px;
+}
+
+.big-white {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8rem !important;
+  color: var(--fg-white);
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.btn.btn__white {
+  background-color: var(--fg-white);
+  color: var(--bg-black);
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.btn.btn__primary {
+  font-family: "Bebas Neue", cursive;
+  background-color: var(--pr-blue);
+  color: var(--fg-white);
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  background-image: url("/images/spaceship-banner.jpeg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__content {
+  width: 100%;
+  height: 100%;
+  padding: 35px 160px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.header__nav-item {
+  list-style: none;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: var(--fg-white);
+  font-size: 1.85rem;
+}
+
+.header__nav-link:hover {
+  border-bottom: 2px solid var(--pr-blue);
+}
+
+.header__nav-link.active {
+  color: var(--pr-blue);
+}
+
+.header__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__content {
+  width: 100%;
+  height: 100%;
+  padding: 35px 160px;
+}
+
+.main__card {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.main__card-img {
+  width: 550px;
+}
+
+.main__card-title {
+  font-size: 70px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.main__cta {
+  margin-top: 40px;
+  background-color: var(--pr-blue);
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px 30px;
+  color: var(--fg-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.packages__row {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  margin: 40px 0px;
+  row-gap: 20px;
+}
+
+.packages__col {
+  width: 33.33%;
+}
+
+.packages__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin: 0 10px;
+  padding: 20px 20px;
+  border: 1px solid lightgray;
+  color: black;
+}
+
+.packages__card:hover {
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.packages__card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.package-view__row {
+  display: flex;
+  align-items: start;
+  column-gap: 80px;
+  height: 100%;
+}
+
+.package-view__col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 20px;
+}
+
+.package-view__img {
+  width: 100%;
+}
+
+.package-view__features {
+  margin: 0px 15px;
+  padding: 0;
+}
+
+.package-view__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__row {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+  margin: 40px 0px;
+}
+
+.about__col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 10px;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+}
+
+.footer__content {
+  padding: 35px 160px;
+}
+
+.footer__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 33.33%;
+}
+
+.footer__social-link {
+  width: 30px;
+}
+
+.footer__social-links {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer__item {
+  list-style: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: var(--fg-white);
+}
+
+.footer__link:hover {
+  border-bottom: 2px solid var(--pr-blue);
+}
+
+.header__nav-hamburger {
+  display: none !important;
+  z-index: 1001;
+}
+
+.header__nav-hamburger img {
+  width: 30px;
+}
+
+.header__nav-hamburger img:hover {
+  border-bottom: 2px solid var(--pr-blue);
+  cursor: pointer;
+}
+
+.header__nav-hamburger.active img:hover {
+  border-bottom: 2px solid var(--fg-white);
+}
+
+.mobile-nav {
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--pr-blue);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.mobile-nav__item {
+  list-style: none;
+}
+
+.mobile-nav__link {
+  text-decoration: none;
+  color: var(--fg-white);
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
+
+.mobile-nav__link:hover {
+  border-bottom: 2px solid var(--fg-white);
+}
+
+.mobile-nav.active {
+  bottom: 0;
+}
+
+.contact__section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.contact__form {
+  width: 500px;
+}
+
+.contact__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact__form-group .contact__form-element {
+  padding: 10px 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .main__card {
+    column-gap: 50px;
+  }
+
+  .main__card-img {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 500px;
+  }
+
+  .header__content {
+    padding: 35px 80px;
+  }
+
+  .main__content {
+    padding: 35px 80px;
+  }
+
+  .main__card {
+    column-gap: 40px;
+  }
+
+  .main__card-img {
+    width: 400px;
+  }
+
+  .main__card-title {
+    font-size: 50px;
+  }
+
+  .about__col {
+    width: 25%;
+  }
+
+  .about__col.col-2 {
+    width: 75%;
+  }
+
+  .footer__content {
+    padding: 35px 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 400px;
+  }
+
+  .header__content {
+    padding: 35px 40px;
+  }
+
+  .main__content {
+    padding: 35px 40px;
+  }
+
+  .main__card-img {
+    width: 300px;
+  }
+
+  .packages__col {
+    width: 50%;
+  }
+
+  .package-view__row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin: 40px 0px;
+  }
+
+  .package-view__col {
+    width: 100%;
+  }
+
+  .about__row {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+  }
+
+  .about__col {
+    width: 100%;
+  }
+
+  .about__col.col-2 {
+    width: 100%;
+  }
+
+  .footer__content {
+    padding: 35px 40px;
+  }
+
+  .contact__form {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url("/images/space-earth-banner.jpeg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__content {
+    padding: 20px;
+  }
+
+  .header__body h1,
+  .header__body span {
+    text-align: center;
+  }
+
+  .main__content {
+    padding: 20px;
+  }
+
+  .main__card-img {
+    width: 400px;
+    order: 2;
+  }
+
+  .main__card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    text-align: center;
+  }
+
+  .packages__col {
+    width: 100%;
+  }
+
+  .footer__content {
+    padding: 20px;
+  }
+
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  .footer__col {
+    width: 75%;
+    align-items: center;
+  }
+
+  .header__nav-hamburger {
+    display: block !important;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-hamburger {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    bottom: 100% !important;
+  }
+}
